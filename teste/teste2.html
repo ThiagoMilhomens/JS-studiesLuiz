@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <div id="saudacao1"></div>
+    </section>
+    <script>
+        const nome = prompt('Digite seu Nome:')
+        const imprimir = document.getElementById('saudacao1')
+        let fraseCompleta = function () {
+              return `Bom dia ${nome}!`
+           }
+        
+        imprimir.innerHTML = fraseCompleta()
+    </script>
+</body>
+</html>
