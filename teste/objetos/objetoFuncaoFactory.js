@@ -16,3 +16,17 @@ pessoa2.sobrenome = pessoa1.sobrenome
 console.log(pessoa2)
 // { nome: 'Cristina', sobrenome: 'Milhomens', idade: 29 }
 
+let altura = 2
+let peso = 80
+
+
+
+    function resultadoImc() {
+        return peso / altura ** 2
+    }
+
+   
+    let imc = resultadoImc()
+
+
+   console.log(`seu imc ${imc}`)
