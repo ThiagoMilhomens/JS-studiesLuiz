@@ -69,9 +69,13 @@ table, th, td {
     
 }
  
-.resultado {
-    background:  rgb(108, 224, 157);
+.paragrafoDeuBom, .paragrafoDeuRuim {
+    background: rgb(136, 236, 178) ;
     padding: 10px 20px;
     color: rgb(46, 37, 37);
+    
+}
 
+.paragrafoDeuRuim {
+    background: rgb(255, 66, 66) ;
 }

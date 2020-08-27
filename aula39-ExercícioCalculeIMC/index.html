@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcule IMC</title>
+    <title>Calcule seu IMC</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -49,18 +49,20 @@
 
         <h1>Calcule seu IMC</h1>
 
-        <form class="form" >
+        <form action="/" class="form" method="POST" > <!--Action e method neste caso não tem efeito, servem para ligar backend?-->
             
-            <p>Altura:<input type="text" id="altura"> </p>
+            <label for="altura"> Altura em metros: </label>
+            <input type="text" id="altura" name="altura">
 
-            <p>Peso:<input type="text" id="peso"></p>
+            <label for="peso"> Peso em Kg: </label>
+            <input type="text" id="peso" name="peso"> <!-- name não tem efeito, servem para ligar backend -->
 
             <button>Calcular</button>
 
-            <div class="resultado"></div>
+            <div class="resultado" id="resultadoMain1"></div>
         </form>
     </section>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main2.js"></script>
 </body>
 
 </html>
