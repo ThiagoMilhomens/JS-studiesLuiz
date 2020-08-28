@@ -1,0 +1,26 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background:  rgb(17, 86, 102);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.1em;
+}
+
+.container {
+    max-width: 540px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
