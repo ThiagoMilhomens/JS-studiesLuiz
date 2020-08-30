@@ -1,2 +1,2 @@
 # JS-studiesLuiz
-Just following classes from udemy course by Luiz Otávio
+Just following classes of udemy course by Luiz Otávio
