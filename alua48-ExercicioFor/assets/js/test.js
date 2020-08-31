@@ -6,8 +6,20 @@ const elementos = [
 ]
 
 const [ p, div, footer, section] = elementos
-console.log(elementos[2])
 
+let objeto = elementos [2]
+
+function destrucTag () {
+    let {tag, texto} = objeto
+    return `<${tag}>${texto}</${tag}>`
+}
+
+//console.log(destrucTag())
+
+for (let i = 0; i < elementos.length; i ++) { 
+        console.log (objeto)
+
+}
 
 
 
