@@ -7,13 +7,14 @@ const elementos = [
 ]
 
 
-const [ p, div, footer, section] = elementos
 
-let objeto = elementos [2] // getIndice
+const alcance = []
 
-function destrucTag () {
-    let {tag, texto} = objeto
-    return `<${tag}>${texto}</${tag}>`
+for (let i = 0; i < elementos.length; i ++) { 
+    let {tag,texto} = elementos [i]
+    console.log(alcance.push([`<${tag}>${texto}</${tag}>`]))
 }
 
-h1.innerHTML = elementos
+let resultado = `${alcance[0]}${alcance[1]}${alcance[2]}${alcance[3]}`
+
+h1.innerHTML = resultado

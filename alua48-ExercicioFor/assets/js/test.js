@@ -1,25 +1,32 @@
+
+
+// desestruturando array
 const elementos = [
-    {tag: 'p', texto: 'Frase 1'}, // 0
-    {tag: 'div', texto: 'Frase 2'}, // 1
-    {tag: 'footer', texto: 'Frase 3'}, // 2
-    {tag: 'section', texto: 'Frase 4'}  // 3 
+    {tag: 'p', texto: 'Frase 1'},
+    {tag: 'div', texto: 'Frase 2'},
+    {tag: 'footer', texto: 'Frase 3'},
+    {tag: 'section', texto: 'Frase 4'}
 ]
 
-const [ p, div, footer, section] = elementos
 
-let objeto = elementos [2]
 
-function destrucTag () {
-    let {tag, texto} = objeto
-    return `<${tag}>${texto}</${tag}>`
-}
-
-//console.log(destrucTag())
+const alcance = []
 
 for (let i = 0; i < elementos.length; i ++) { 
-        console.log (objeto)
-
+    let {tag,texto} = elementos [i]
+    console.log(alcance.push([`<${tag}>${texto}</${tag}>`]))
 }
 
+let resultado = `${alcance[0]}${alcance[1]}${alcance[2]}${alcance[3]}`
+
+
+
+// //desetruturando objeto
+// let objeto = elementos [i] 
+
+// function destrucTag () {
+//     let {tag, texto} = objeto
+//     return `<${tag}>${texto}</${tag}>`
+// }
 
 
