@@ -9,20 +9,20 @@ let hora = 0
 
 let contador;
 
-function getContador() {
+function formatoContador() {
     return (hora < 10 ? '0'+ hora : hora) + ':' + (mit < 10 ? '0'+ mit : mit) + ':' + (seg < 10 ? '0'+ seg : seg);
 }
 
 function correr () {
-    relogio.textContent = getContador()
+    relogio.textContent = formatoContador()
     seg++;
     if (seg == 60) {
-        seg = 0;
-        mit++;
+        seg = 0
+        mit++
     }
     if (mit == 60) {
-        mit = 0;
-        hora++;
+        mit = 0
+        hora++
     }
 }
 
@@ -45,12 +45,13 @@ function clickPausar() {
 
 function clickParar() {
     pararRelogio ()
-    seg = 0; 
-    mit = 0; 
-    hora = 0;
-    relogio.textContent = getContador()
+    seg = 0
+    mit = 0
+    hora = 0
+    relogio.textContent = formatoContador()
 
 }
+
 
 iniciar.addEventListener('click', function (e) {
     clickIniciar()
