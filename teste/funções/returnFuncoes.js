@@ -35,3 +35,19 @@ console.log(triplica(2))
 // 6
 console.log(quadruplica(2))
 // 8
+
+// Escopo lexico
+
+const nome = 'thiago'
+
+function falaNome () {
+    const nome = 'Otávio'
+    console.log(nome)
+}
+
+function usaFalaNome() {
+    const nome = 'Pedro'
+    falaNome()
+}
+
+usaFalaNome()
