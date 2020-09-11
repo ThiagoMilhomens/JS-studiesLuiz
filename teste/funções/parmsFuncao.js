@@ -78,3 +78,16 @@ let clienteNoArray = [ 'Thiago', 'Milhomens', 36 ]
 
 desestruturaNaFuncao2(clienteNoArray)
 // Thiago Milhomens 36
+
+function conta(operador, acumulador , ...numeros) {
+    for (let i of numeros ) {
+        if (operador === '+') acumulador += i
+        if (operador === '-') acumulador -= i
+        if (operador === '/') acumulador /= i
+        if (operador === '*') acumulador *= i
+    }
+    console.log(acumulador)
+}
+
+conta('*', 1, 10, 20, 30, 40)
+// 240000
