@@ -2,7 +2,7 @@
 
 var nome = 'Thiago'
 
-function falaNome () {
+function falaNome() {
     nome = 'Otávio'
     console.log(nome)
 }
@@ -19,9 +19,9 @@ usaFalaNome()
 // Closure
 
 var nome = 'Rodrigo'                                                 // Escopo global
-                                                     
+
 function retornaFunção(nome) { // <<< função mãe                      |
-    return function() {        // <<< funçao filha (anônima)          | 
+    return function () {       // <<< funçao filha (anônima)          | 
         return nome            //                                     | Escopo léxico
     }                          // Closure "trava" a funcao (filha) no |        
 }                              // acesso apenas do escopo léxico      |                          
@@ -33,4 +33,4 @@ const funcao2 = retornaFunção('João')  // para 'funcao2' nome será SEMPRE 'J
 console.log(funcao1())
 // Luiz
 console.log(funcao2())
-// João
+    // João
