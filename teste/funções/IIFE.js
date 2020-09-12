@@ -1,6 +1,5 @@
 // IIFE
 
-
 (function(){
     nome = 'thiago'
     console.log(nome)
@@ -31,7 +30,7 @@ let cliente = 'Thiago'
 let sobrenome = 'Milhomens'
 let peso = 120
 let altura = 181
-let idade = 36
+let idade = 37
 
 function id () {     // ñ sei pq mas não aceita string como primeiro parâmetro
     return cliente
@@ -41,4 +40,4 @@ function id () {     // ñ sei pq mas não aceita string como primeiro parâmetr
         console.log(`nome: ${id}, sobrenome: ${sobrenome}, peso: ${peso}, altura: ${altura}, idade: ${idade}`)
 }) (cliente , sobrenome, peso, altura, idade);  // mas aceita string como segundo parâmetro ???
 
-// nome: Thiago, sobrenome: Milhomens, peso: 120, altura: 181, idade: 36
+// nome: Thiago, sobrenome: Milhomens, peso: 120, altura: 181, idade: 37
