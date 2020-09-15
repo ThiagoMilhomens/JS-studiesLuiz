@@ -4,12 +4,48 @@ function criaCalculadora() {
     return {
         
         // CHAVE DISPLAY (linkando os valores do display) 
-        display: document.querySelector('.display'), 
-
+        display: document.querySelector('.display'),
+        btnClear: document.querySelector('.btn-clear'),
+        
         inicia() {
             this.cliqueBotoes()
+            this.pressionarEnter()
+        },
+
+        pressionarEnter() {
+            this.display.addEventListener('keyup', e => {
+                if (e.keyCode === 13) {
+                    this.realizaconta()
+                }
+            })
+        },
+
+        clearDisplay() {
+            this.display.value = ''
         },
         
+        apagaUm() {
+            this.display.value = this.display.value.slice(0, -1)
+        },
+
+        realizaconta() {
+            let conta = this.display.value
+            
+            try {
+                conta = eval(conta)
+
+                if(!conta) {
+                    alert ('conta inválida')
+                    return
+                }
+                this.display.value = String(conta)
+            } catch(e) {
+                alert('Conta Inválida')
+                return;
+            }
+        },           
+
+
         // CAPTURAR CLICK
         cliqueBotoes() {
                 // this >> escopo 'criarCalculadora()'           
@@ -20,6 +56,18 @@ function criaCalculadora() {
 
                 if (el.classList.contains('btn-num')) {
                     this.btnParaDisplay(el.innerText) // 'this' precisa funcionar somente neste escopo.
+                }
+                
+                if (el.classList.contains('btn-clear')) {
+                    this.clearDisplay()
+                }
+
+                if (el.classList.contains('btn-del')) {
+                    this.apagaUm()
+                }
+
+                if (el.classList.contains('btn-eq')) {
+                    this.realizaconta()
                 }
 
             }.bind(this)); // << fechando 'this' neste escopo com '.bind()' 
