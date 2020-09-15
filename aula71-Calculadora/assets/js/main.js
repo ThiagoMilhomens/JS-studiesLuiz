@@ -48,7 +48,7 @@ function criaCalculadora() {
 
         // CAPTURAR CLICK
         cliqueBotoes() {
-                // this >> escopo 'criarCalculadora()'           
+            // this >> escopo 'criarCalculadora()'           
             document.addEventListener('click', function(e) {
                 // this >> escopo 'document'
                 // JOGANDO VALORES NO DISPLAY 1              
