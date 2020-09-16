@@ -51,8 +51,6 @@ function Calculadora() {
 
     this.clear = () => this.display.value = ''
     this.del = () => this.display.value = this.display.value.slice( 0, -1)
-
-
     
 }
 
